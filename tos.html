@@ -220,6 +220,23 @@
     &copy; 2025 Altura Automations. All rights reserved.
   </div>
 </footer>
-
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({ once: true, duration: 1000, easing: 'ease-out' });
+      const menuToggle = document.getElementById('menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (menuToggle && mobileMenu) {
+        menuToggle.addEventListener('click', () => {
+          const isOpen = !mobileMenu.classList.contains('opacity-0');
+          if (isOpen) {
+            mobileMenu.classList.add('opacity-0', 'scale-95', 'pointer-events-none');
+            mobileMenu.classList.remove('opacity-100', 'scale-100');
+          } else {
+            mobileMenu.classList.remove('opacity-0', 'scale-95', 'pointer-events-none');
+            mobileMenu.classList.add('opacity-100', 'scale-100');
+          }
+        });
+      }
+    </script>
     </body>
 </html>
