@@ -98,212 +98,204 @@
     </body>
 
 <body id="hero">
-  <section id="hero" class="min-h-screen bg-black text-white px-6 py-20 flex flex-col items-center justify-center text-center space-y-12">
-    <!-- Top Icon -->
-    <div class="flex items-center justify-center">
-      <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-white/10 via-white/30 to-white/10 blur-sm"></div>
+<section id="hero" class="bg-black text-white py-4 px-6">
+  <div class="max-w-[1600px] mx-auto grid md:grid-cols-5 gap-12 items-center">
+
+    <!-- Left: Text Column (2/5) -->
+    <div class="md:col-span-2 text-center md:text-left space-y-6">
+      <p class="uppercase tracking-widest text-sm text-[#8962e6a9]">AI Assistants</p>
+
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+        Automate Smarter with AI
+      </h1>
+
+      <p class="text-gray-400 text-lg">
+        Deploy AI assistants and automation systems that eliminate busywork, streamline operations, and help your business scale effortlessly.
+      </p>
+
+      <a href="/consultation" class="mt-4 inline-block px-6 py-3 text-black font-medium bg-white rounded-md transition-transform hover:scale-[1.04] duration-200">
+        Book a Consultation →
+      </a>
     </div>
 
-    <!-- Tagline -->
-    <p class="uppercase tracking-widest text-sm text-[#8962e6a9]">Altura Automations</p>
-
-    <!-- Headline -->
-<h1 class="text-4xl md:text-6xl font-bold max-w-4xl mx-auto leading-tight">
-  Automate. Optimize. Scale.
-</h1>
-
-    <!-- Summary -->
-    <p class="text-gray-400 text-lg max-w-xl mx-auto">
-      Designing AI assistants, automation systems, and custom workflows that replace busywork, improve response time, and help your business grow on autopilot.
-    </p>
-
-    <!-- Call to Action -->
-    <a href="/consultation" class="rainbow-border-button relative inline-block px-6 py-3 font-medium text-white bg-black rounded-md overflow-hidden transition-transform duration-200 transform hover:scale-105">
-      <span class="relative z-10">Book A Consultation</span>
-    </a>
-
-    <!-- Feature Grid -->
-    <div class="pt-24 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl w-full text-left">
-      <div>
-        <p class="font-semibold mb-2">AI Assistants</p>
-        <p class="text-gray-400 text-sm">Custom AI agents built specifically for your use case — from lead qualification to support and booking.</p>
-      </div>
-      <div>
-        <p class="font-semibold mb-2">Automations & Workflows</p>
-        <p class="text-gray-400 text-sm">End‑to‑end workflows that trigger follow‑ups, reminders, and notifications — freeing you from manual tasks.</p>
-      </div>
-      <div>
-        <p class="font-semibold mb-2">The Real Estate CRM</p>
-        <p class="text-gray-400 text-sm">Comprehensive CRM platforms for real estate agents, with lead tracking, pipeline automations, and built‑in communications.</p>
-      </div>
+    <!-- Right: Image Column (3/5) -->
+    <div class="md:col-span-3 flex justify-center md:justify-end pt-42">
+      <img 
+        src="https://i.postimg.cc/VsBBskF2/altura-gpt.png" 
+        alt="AI Assistant Interface"
+        class="rounded-xl w-full max-w-[1000px] h-auto object-contain shadow-xl"
+        style="opacity: 1;"
+      >
     </div>
-  </section>
+  </div>
+</section>
 
-  <style>
-    @keyframes rainbowBorder {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
 
-    .rainbow-border-button::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      padding: 2px;
-      border-radius: 0.5rem;
-      background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet, red);
-      background-size: 400% 400%;
-      animation: rainbowBorder 5s linear infinite;
-      z-index: 0;
-      mask:
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-      -webkit-mask:
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-      mask-composite: exclude;
-      -webkit-mask-composite: destination-out;
-    }
-  </style>
+
 </body>
 
-<section id="automation-benefits" class="bg-black text-white py-24 px-6">
-  <div class="text-center mb-16">
-    <p class="uppercase tracking-widest text-sm text-[#8962e6a9]">Why Automate</p>
-    <h2 class="text-4xl md:text-5xl font-bold mb-4">Automate the Work. Focus on Growth.</h2>
-    <p class="text-gray-400 text-lg max-w-3xl mx-auto">
-      We build automation systems that eliminate repetitive tasks, manage lead pipelines, and trigger smart workflows — so you can scale without scaling your workload.
-    </p>
-  </div>
+<section id="feature-cta" class="bg-black text-white py-24 px-6">
+  <div class="max-w-7xl mx-auto" data-aos="fade-up">
+    <div class="grid md:grid-cols-2 items-center gap-12">
+      <!-- Text Side -->
+      <div class="text-center md:text-left">
+        <div class="flex justify-center md:justify-start mb-6">
+          <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-white/10 via-white/40 to-white/10 blur-sm flex items-center justify-center animate-pulse-slow">
+            <div class="w-4 h-4 rounded-full bg-white"></div>
+          </div>
+        </div>
+        
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Never Lose Another Lead Again</h1>
+        <p class="text-gray-400 text-lg mb-8">
+          We turn missed calls and unanswered messages into booked appointments — all hands-free, powered by AI.
+        </p>
+        <a href="/consultation"
+           class="relative inline-block px-6 py-3 text-white font-medium rounded overflow-hidden z-10
+                  bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500
+                  animate-gradient-move transition-all hover:scale-105 shadow-lg shadow-pink-500/20">
+          <span class="relative z-10">Book Your Consultation</span>
+        </a>
+      </div>
 
-  <div class="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
-    <!-- Card 1 -->
-    <div>
-      <h3 class="text-xl font-semibold mb-2">Lead Nurture Workflows</h3>
-      <p class="text-gray-400 text-sm">Automatically follow up with cold leads, send reminders, and re-engage with the right message at the right time — without lifting a finger.</p>
-    </div>
-
-    <!-- Card 2 -->
-    <div>
-      <h3 class="text-xl font-semibold mb-2">Pipeline Triggers</h3>
-      <p class="text-gray-400 text-sm">Move deals through stages, assign tasks, and notify your team based on behavior or time delays — all hands-free.</p>
-    </div>
-
-    <!-- Card 3 -->
-    <div>
-      <h3 class="text-xl font-semibold mb-2">Smart Follow-Ups</h3>
-      <p class="text-gray-400 text-sm">Send personalized emails or texts based on client status, form submissions, or missed calls — so you never miss a chance to convert.</p>
-    </div>
-
-    <!-- Card 4 -->
-    <div>
-      <h3 class="text-xl font-semibold mb-2">Task & Reminder Automation</h3>
-      <p class="text-gray-400 text-sm">Create automated to-dos, assign follow-up dates, and get alerts so you never drop the ball on active leads.</p>
-    </div>
-
-    <!-- Card 5 -->
-    <div>
-      <h3 class="text-xl font-semibold mb-2">Custom Sequences</h3>
-      <p class="text-gray-400 text-sm">Build onboarding flows, multi-step campaigns, or internal SOPs triggered from one action — fully tailored to your business.</p>
-    </div>
-
-    <!-- Card 6 -->
-    <div>
-      <h3 class="text-xl font-semibold mb-2">Third-Party Integration</h3>
-      <p class="text-gray-400 text-sm">Connect to your calendar, CRM, spreadsheet, or form builder — we’ll automate it all from one unified hub.</p>
-    </div>
-  </div>
-</section>
-
-
-<!-- RE CRM Section -->
-<section id="crm-platform" class="bg-black text-white py-24 px-6">
-  <div class="text-center mb-16">
-    <p class="uppercase tracking-widest text-sm text-[#8962e6a9]">All-In-One Real Estate CRM</p>
-    <h2 class="text-4xl md:text-5xl font-bold mb-4">The System That Closes More Deals</h2>
-    <p class="text-gray-400 text-lg max-w-3xl mx-auto">
-      Our real estate CRM combines powerful automations, lead management, follow-ups, and pipeline tracking into a single platform — built to help agents stay organized and scale with ease.
-    </p>
-  </div>
-
-<div class="grid md:grid-cols-5 gap-12 max-w-7xl mx-auto items-center">
-  <!-- Features Left (2/5 of the grid) -->
-  <div class="md:col-span-2 space-y-6">
-    <div>
-      <h3 class="text-xl font-semibold mb-1">Lead Capture</h3>
-      <p class="text-gray-400 text-sm">Automatically log and tag leads from forms, landing pages, Facebook, and paid ads — with no manual entry.</p>
-    </div>
-    <div>
-      <h3 class="text-xl font-semibold mb-1">Pipeline Automation</h3>
-      <p class="text-gray-400 text-sm">Move contacts through custom deal stages with automated messaging, reminders, and task assignments.</p>
-    </div>
-    <div>
-      <h3 class="text-xl font-semibold mb-1">Built-In Messaging</h3>
-      <p class="text-gray-400 text-sm">Send and receive SMS, emails, and DMs directly inside the CRM — all tied to the client record.</p>
-    </div>
-    <div>
-      <h3 class="text-xl font-semibold mb-1">Calendar & Booking</h3>
-      <p class="text-gray-400 text-sm">Integrated with your calendar to schedule showings, consultations, and follow-ups without back-and-forth.</p>
-    </div>
-    <div>
-      <h3 class="text-xl font-semibold mb-1">Post-Close Follow-Up</h3>
-      <p class="text-gray-400 text-sm">Send automatic thank-yous, review requests, and nurture messages months after the deal is done.</p>
-    </div>
-  </div>
-
-  <!-- Diagram/Image Right (3/5 of the grid) -->
-  <div class="md:col-span-3 flex justify-center md:justify-end">
-    <img src="https://i.postimg.cc/K8cT87YM/automation-flow-2.png"
-         alt="CRM Flow Diagram"
-         class="rounded-xl w-full max-w-4xl h-auto opacity-100">
-  </div>
-</div>
-</section>
-
-
-<section id="ai-applications" class="bg-black text-white py-24 px-6">
-  <div class="text-center mb-16">
-    <p class="uppercase tracking-widest text-sm text-[#8962e6a9]">AI Assistants</p>
-    <h2 class="text-4xl md:text-5xl font-bold mb-4">Tailored AI Applications for Your Business</h2>
-    <p class="text-gray-400 text-lg max-w-3xl mx-auto">
-      Launch AI-powered assistants trained for your exact use case — whether you're booking appointments, answering FAQs, or capturing leads from your website, forms, or phone system.
-    </p>
-  </div>
-
-  <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-    <!-- Card 1 -->
-    <div class="border border-white/10 bg-white/5 rounded-2xl p-8 backdrop-blur-sm hover:scale-[1.02] transition-transform duration-300">
-      <p class="uppercase text-sm text-[#8962e6a9] font-semibold mb-2">Real-Time Lead Capture</p>
-      <h3 class="text-2xl font-bold mb-4">AI That Answers, Qualifies, and Books</h3>
-      <p class="text-gray-400 text-sm mb-6">
-        AI that picks up missed calls, answers common questions, and turns conversations into bookings — instantly.
-      </p>
-      <div class="bg-black border border-white/10 rounded-xl p-4 text-xs text-gray-300">
-        <p class="mb-1 text-white">User:</p>
-        <p>"Can I schedule a plumbing appointment for tomorrow morning?"</p>
-        <p class="mt-4 mb-1 text-white">AI:</p>
-        <p>"Absolutely — I’ve booked you for 9:00 AM. You’ll get a confirmation shortly."</p>
+      <!-- Image Side -->
+      <div class="flex justify-center">
+        <img src="p-ai-assistant-schedule.png"
+             class="rounded-xl max-w-[900px] w-full h-auto animate-float"
+             alt="AI Business Assistant Chat">
       </div>
     </div>
+  </div>
+</section>
+<!-- Process Section -->
+<section id="process" class="bg-black text-white py-24 px-6">
+  <p class="uppercase tracking-widest text-center pb-4 text-sm text-[#8962e6a9]">The Process</p>
+  <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">AI In Action</h2>
 
-    <!-- Card 2 -->
-    <div class="border border-white/10 bg-white/5 rounded-2xl p-8 backdrop-blur-sm hover:scale-[1.02] transition-transform duration-300">
-      <p class="uppercase text-sm text-[#8962e6a9] font-semibold mb-2">Custom Use Case Training</p>
-      <h3 class="text-2xl font-bold mb-4">Assistants That Act Like Staff</h3>
-      <p class="text-gray-400 text-sm mb-6">
-        Each assistant is trained on your services, pricing, hours, and tone — so they sound like someone on your team, not a bot.
-      </p>
-      <div class="bg-black border border-white/10 rounded-xl p-4 text-xs text-gray-300">
-        <p class="mb-1 text-white">User:</p>
-        <p>"What do I need to get pre-approved before we tour homes?"</p>
-        <p class="mt-4 mb-1 text-white">AI:</p>
-        <p>"We recommend a mortgage pre-approval letter. I can connect you with a lender we work with or send over a checklist."</p>
+  <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-16 items-start">
+    <!-- Image for Step 1 -->
+    <div class="flex justify-center md:justify-start">
+      <img src="p-imsg-ai.png" alt="AI SMS Reply Screenshot" class="rounded-xl max-w-full h-auto">
+    </div>
+
+    <!-- Steps Column -->
+    <div class="space-y-32">
+      <!-- Step 1 -->
+      <div class="space-y-4">
+        <p class="text-sm text-gray-400">Step 01</p>
+        <h3 class="text-2xl font-semibold">We Connect</h3>
+        <p class="text-gray-400 text-base">We hook into your phone number, social DMs, and messaging tools. Any time a client reaches out, our system catches it instantly.</p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="space-y-4">
+        <p class="text-sm text-gray-400">Step 02</p>
+        <h3 class="text-2xl font-semibold">We Converse</h3>
+        <p class="text-gray-400 text-base">Our AI engages clients through natural, helpful conversations — answering questions, gathering details, and guiding them toward action.</p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="space-y-4">
+        <p class="text-sm text-gray-400">Step 03</p>
+        <h3 class="text-2xl font-semibold">We Convert</h3>
+        <p class="text-gray-400 text-base">When they’re ready, we book them in. You get the notification. No missed leads. No manual work. Just results.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<style id="button-animation">
+  @keyframes gradient-move {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  .animate-gradient-move {
+    background-size: 300% 300%;
+    animation: gradient-move 6s ease infinite;
+  }
+</style>
+<style id="section-slide-in">
+  @keyframes fade-slide-up {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-slide {
+    animation: fade-slide-up 1.2s ease-out both;
+  }
+</style>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true, // Only animate once
+    duration: 1000, // 1s animation
+    easing: 'ease-out',
+  });
+</script>
+
+<section id="integrations" class="bg-black text-white py-24 px-6">
+  <div class="max-w-6xl mx-auto text-center">
+    <p class="uppercase tracking-widest text-center pb-4 text-sm text-[#8962e6a9]">Integrations</p>
+    <h2 class="text-4xl md:text-5xl font-bold mb-10">Seamlessly Integrated</h2>
+    <p class="text-gray-400 max-w-2xl mx-auto mb-16 text-lg">Our AI assistants plug into the tools you already use. No disruption. Just connection, automation, and results.</p>
+
+    <div class="grid md:grid-cols-2 gap-10 text-left">
+      <div>
+        <h3 class="font-semibold text-xl mb-2">CRMs</h3>
+        <p class="text-gray-400">Automatically log leads, notes, quotes, and appointment data directly into your client databases.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-xl mb-2">Calendars</h3>
+        <p class="text-gray-400">Book appointments in real-time using your existing scheduling software. Zero back and forth.</p>
       </div>
     </div>
   </div>
 </section>
 
+<section id="faq" class="bg-black text-white py-24 px-6">
+  <div class="max-w-4xl mx-auto text-center">
+    <p class="uppercase text-center tracking-widest pb-4 text-sm text-[#8962e6a9]">FAQ</p>
+    <h2 class="text-4xl md:text-5xl font-bold mb-10 pb-10">Frequently Asked Questions</h2>
+    <div class="space-y-8 text-left">
+
+      <div>
+        <h3 class="font-semibold text-lg">How fast can I get started?</h3>
+        <p class="text-gray-400 mt-2">Most businesses go live in just 3–5 days. We handle the full setup, training, and integration.</p>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-lg">Can the AI talk to clients in real-time?</h3>
+        <p class="text-gray-400 mt-2">Yes. Our assistants reply instantly to calls, texts, and messages using natural language.</p>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-lg">Does it work 24/7?</h3>
+        <p class="text-gray-400 mt-2">Yes — your AI assistant works around the clock, so you never miss a message, lead, or appointment again.</p>
+      </div>
+
+
+      <div>
+        <h3 class="font-semibold text-lg">What’s included in the setup fee?</h3>
+        <p class="text-gray-400 mt-2">The setup covers everything: AI configuration, voice/message scripting, automation, and onboarding support.</p>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-lg">Will I need to learn any tech?</h3>
+        <p class="text-gray-400 mt-2">Nope. Everything is managed for you. We set it up, monitor it, and keep it running — so you can stay focused on your business.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-lg">What if I want to make changes later?</h3>
+        <p class="text-gray-400 mt-2">We offer monthly support to update responses, add features, or expand integrations as your business evolves.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 <section class="bg-black text-white py-28 px-6">
   <div class="max-w-4xl mx-auto text-center space-y-8">
